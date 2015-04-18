@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/odds_rect_solid"
+    android:orientation="horizontal" >
+
+    <ToggleButton
+        android:id="@+id/odds_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:layout_marginLeft="1dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/odds_bg_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="1dip"
+        android:text=""
+        android:textColor="@drawable/odds_textcolor_selector"
+        android:textOff=" "
+        android:textOn=" "
+        android:textSize="12sp" />
+
+</LinearLayout>

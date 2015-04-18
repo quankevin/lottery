@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#019b79</drawable>
+    <drawable name="gray">#3a3e4d</drawable>
+    <drawable name="dialog_window_bg">#502c2e3a</drawable>
+    <drawable name="trtransparent">#00000000</drawable>
+    <drawable name="odds_detail_bg">#393F4D</drawable>
+    <!-- #818ba9 -->
+
+    <color name="dialog_ok">#ff7200</color>
+    <color name="black_text">#272727</color>
+    <color name="bank_selected_color">#5B5D69</color>
+    <color name="bank_unselected_coor">#40444f</color>
+    <color name="button_gray">#3a3e4d </color>
+    <color name="yellow">#b69966</color>
+    <color name="white_text">#FFFFFF</color>
+    <color name="bg_tab_title">#ef551c</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="text_color">#4A4A4A</color>
+    <color name="background_transpant">#55000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#019b79</color>
+    <color name="blue">#0091a8</color>
+    <color name="black">#525252</color>
+    <color name="account_color">#5adb55</color>
+    <color name="userinfocolor">#535353</color>
+    <color name="deep_black">#000000</color>
+    <color name="default_color">#333333</color>
+    <color name="head_color">#ef551c</color>
+    <color name="pink">#FF00FF</color>
+    <color name="bg_color">#f0f0f0</color>
+    <color name="blood_oxygen_bg_color">#969696</color>
+    <color name="hd_over">#4b4b4b</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="tab_down_text">#ffb1b1</color>
+    <color name="tvision_black">#424449</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_shallow">#CBCBCB</color>
+    <color name="white_light">#797F79</color>
+    <color name="login_out_text">#424449</color>
+    <color name="gray">#262932</color>
+    <color name="gray_item">#313440</color>
+    <color name="soft_gray">#41444d</color>
+    <!-- <color name="soft_gray">#f2f2f2</color> -->
+    <!-- <color name="soft_gray2">#55eaeaea</color> -->
+    <color name="deep_gray">#272b32</color>
+    <color name="light_gray">#d0d0d0</color>
+    <color name="edit_color">#86878c</color>
+    <color name="line_color">#464A55</color>
+    <color name="stroke_color">#454B5B</color>
+    <color name="list_item_gary">#313742</color>
+    <color name="odds_detail_bg">#393F4D</color>
+    <color name="odds_match_bg">#D19F0A</color>
+    <color name="odds_rect_solid">#444A5A</color>
+    <color name="odds_check">#C08F0C</color>
+    <color name="odds_text">#D9DEFE</color>
+    <color name="odds_check_bg">#20232A</color>
+    <color name="text_gold">#e5af0b</color>
+    <color name="pull_refresh_textview">#FFFFFF</color>
+    <color name="gold">#FFFFFF</color>
+    <color name="labelColor">#0B273D</color>
+    <color name="labelColorChoose">#f44930</color>
+
+</resources>

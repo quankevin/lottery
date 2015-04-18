@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title"
+        android:gravity="center"
+        android:text="我不赞同"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textsize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_center_bg"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/dialog_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/dialog_edit_bg"
+            android:gravity="top"
+            android:hint="大神，写下你不赞同的原因吧？"
+            android:maxLines="6"
+            android:minLines="1"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="#738ca2"
+            android:textSize="@dimen/main_textsize3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divide_line" />
+
+    <ImageView
+        android:id="@+id/dialog_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_commit_selector" />
+
+</LinearLayout>

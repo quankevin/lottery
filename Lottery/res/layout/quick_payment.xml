@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/userdata_head"
+        style="@style/head_style" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="8dip"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="快捷支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textsize2" />
+
+        <ImageButton
+            android:id="@+id/head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="8dip"
+            android:src="@drawable/question"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@color/bank_unselected_coor"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/quick_payment_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textsize3" />
+
+        <TextView
+            android:id="@+id/recharge_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textsize3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/edit_normal_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="手机校验码:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_textsize" />
+
+            <EditText
+                android:id="@+id/quickpay_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:hint=""
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/soft_gray"
+                android:textCursorDrawable="@drawable/edit"
+                android:textSize="@dimen/main_textsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/send_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pressed"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@drawable/normal_textcolor_selector"
+            android:textSize="@dimen/main_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/quick_pay_money"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/button_bg_selector"
+        android:gravity="center"
+        android:text="确认支付"
+        android:textColor="@color/green"
+        android:textSize="@dimen/main_textsize2" />
+
+</LinearLayout>

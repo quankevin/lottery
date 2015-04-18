@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/userdata_head"
+        style="@style/head_style" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="8dip"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="投注记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textsize2" />
+
+        <ImageButton
+            android:id="@+id/head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="8dip"
+            android:src="@drawable/question"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/bet_record_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/rect_corner_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dip" >
+
+        <RadioButton
+            android:id="@+id/bet_record_all"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ym_constact_left"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:text="全部"
+            android:textColor="@drawable/radiobtn_textcolor_selector"
+            android:textSize="@dimen/main_textsize" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/green" />
+
+        <RadioButton
+            android:id="@+id/bet_record_win"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ym_constact_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="中奖"
+            android:textColor="@drawable/radiobtn_textcolor_selector"
+            android:textSize="@dimen/main_textsize" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/green" />
+
+        <RadioButton
+            android:id="@+id/bet_record_wait"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ym_constact_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待开"
+            android:textColor="@drawable/radiobtn_textcolor_selector"
+            android:textSize="@dimen/main_textsize" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:background="#2d2f3b" />
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

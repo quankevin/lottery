@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/order_head"
+        style="@style/head_style" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="8dip"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择银行"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textsize2" />
+
+        <ImageButton
+            android:id="@+id/head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="8dip"
+            android:src="@drawable/question"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/check_card"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/rect_corner_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dip" >
+
+        <RadioButton
+            android:id="@+id/bank_savings"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ym_constact_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="储蓄卡"
+            android:textColor="@drawable/radiobtn_textcolor_selector"
+            android:textSize="@dimen/main_textsize" />
+
+        <RadioButton
+            android:id="@+id/bank_credit_card"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ym_constact_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="信用卡"
+            android:textColor="@drawable/radiobtn_textcolor_selector"
+            android:textSize="@dimen/main_textsize" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/bank_card_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:background="@color/gray"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/bank_savings_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:background="@color/gray"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+</LinearLayout>

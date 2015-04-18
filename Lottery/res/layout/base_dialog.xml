@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/dialog_title"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/common_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/saveDialogBtnStyle"
+            android:layout_width="150dip"
+            android:layout_height="40dip" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/saveDialogBtnStyle"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="8dip" />
+    </LinearLayout>
+
+</LinearLayout>

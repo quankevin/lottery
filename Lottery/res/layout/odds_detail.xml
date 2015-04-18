@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dip"
+    android:background="@color/odds_detail_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/team_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/match_team"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/odds_match_bg"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="特兰米尔（主）"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/host_team"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="沃尔索尔（客）"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team_ll"
+        android:layout_above="@+id/button_ll"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/sp_odds_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dip"
+                    android:text="胜负平" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="4"
+                    android:background="@color/odds_rect_solid"
+                    android:gravity="center" >
+
+                    <ToggleButton
+                        android:id="@+id/sp_odds_win"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/odds_bg_selector"
+                        android:gravity="center"
+                        android:text="胜 1.55"
+                        android:textColor="@drawable/odds_textcolor_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:textSize="@dimen/main_textsize3" />
+
+                    <ToggleButton
+                        android:id="@+id/sp_odds_draw"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/odds_bg_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="平 3.70"
+                        android:textColor="@drawable/odds_textcolor_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:textSize="@dimen/main_textsize3" />
+
+                    <ToggleButton
+                        android:id="@+id/sp_odds_lose"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/odds_bg_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="负 4.70"
+                        android:textColor="@drawable/odds_textcolor_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:textSize="@dimen/main_textsize3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rq_odds_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dip"
+                    android:text="让球" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="4"
+                    android:background="@color/odds_rect_solid"
+                    android:gravity="center" >
+
+                    <ToggleButton
+                        android:id="@+id/rq_odds_win"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/odds_bg_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="胜 1.55"
+                        android:textColor="@drawable/odds_textcolor_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:textSize="@dimen/main_textsize3" />
+
+                    <ToggleButton
+                        android:id="@+id/rq_odds_draw"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/odds_bg_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="平 3.70"
+                        android:textColor="@drawable/odds_textcolor_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:textSize="@dimen/main_textsize3" />
+
+                    <ToggleButton
+                        android:id="@+id/rq_odds_lose"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/odds_bg_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="负 4.70"
+                        android:textColor="@drawable/odds_textcolor_selector"
+                        android:textOff=""
+                        android:textOn=""
+                        android:textSize="@dimen/main_textsize3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bf_odds_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dip"
+                    android:text="比分" />
+
+                <com.xmtq.lottery.widget.MyGridView
+                    android:id="@+id/bf_gridview"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth" >
+                </com.xmtq.lottery.widget.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jq_odds_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dip"
+                    android:text="进球" />
+
+                <com.xmtq.lottery.widget.MyGridView
+                    android:id="@+id/jq_gridview"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth" >
+                </com.xmtq.lottery.widget.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bq_odds_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dip"
+                    android:text="半全场" />
+
+                <com.xmtq.lottery.widget.MyGridView
+                    android:id="@+id/bq_gridview"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth" >
+                </com.xmtq.lottery.widget.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_cancle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:padding="10dip"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:padding="10dip"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

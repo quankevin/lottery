@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xmtq.lottery.widget.CustomPullListView
+        android:id="@+id/bet_record_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/deep_gray"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

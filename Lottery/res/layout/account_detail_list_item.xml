@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#323642" >
+
+    <LinearLayout
+        android:id="@+id/bet_ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bet_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="12/10"
+            android:textColor="@color/green"
+            android:textSize="@dimen/main_textsize" />
+
+        <TextView
+            android:id="@+id/bet_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="13:12"
+            android:textColor="#c0c2c1"
+            android:textSize="@dimen/main_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bet_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/bet_ll_left"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="购彩"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textsize" />
+
+    <TextView
+        android:id="@+id/bet_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:text="-2.00元"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/bet_ll_left"
+        android:background="#3e424e" />
+
+</RelativeLayout>
